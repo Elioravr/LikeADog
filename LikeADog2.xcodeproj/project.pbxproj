@@ -14,6 +14,7 @@
 		532317CE1A66A67B00E31946 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532317CD1A66A67B00E31946 /* Images.xcassets */; };
 		532317D11A66A67B00E31946 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532317CF1A66A67B00E31946 /* LaunchScreen.xib */; };
 		532317DD1A66A67B00E31946 /* LikeADog2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 532317DC1A66A67B00E31946 /* LikeADog2Tests.m */; };
+		532317E71A66A8EE00E31946 /* sticker375x360.png in Resources */ = {isa = PBXBuildFile; fileRef = 532317E61A66A8EE00E31946 /* sticker375x360.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		532317D61A66A67B00E31946 /* LikeADog2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LikeADog2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		532317DB1A66A67B00E31946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532317DC1A66A67B00E31946 /* LikeADog2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeADog2Tests.m; sourceTree = "<group>"; };
+		532317E61A66A8EE00E31946 /* sticker375x360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sticker375x360.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		532317BF1A66A67B00E31946 /* LikeADog2 */ = {
 			isa = PBXGroup;
 			children = (
+				532317E61A66A8EE00E31946 /* sticker375x360.png */,
 				532317C41A66A67B00E31946 /* AppDelegate.h */,
 				532317C51A66A67B00E31946 /* AppDelegate.m */,
 				532317C71A66A67B00E31946 /* ViewController.h */,
@@ -201,6 +204,7 @@
 			files = (
 				532317CC1A66A67B00E31946 /* Main.storyboard in Resources */,
 				532317D11A66A67B00E31946 /* LaunchScreen.xib in Resources */,
+				532317E71A66A8EE00E31946 /* sticker375x360.png in Resources */,
 				532317CE1A66A67B00E31946 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
