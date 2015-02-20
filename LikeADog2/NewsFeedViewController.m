@@ -143,7 +143,6 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    Post* clickedPost = [self getClickedPost:sender];
     if ([segue.identifier isEqualToString:@"newPost"]) {
         NewPostViewController *newPost = segue.destinationViewController;
         newPost.delegate = self;
@@ -157,11 +156,13 @@
 //        [nextCtrl setContext:likes];
 //    }
     else if ([segue.identifier isEqualToString:@"CommentsListSegue"]){
+        Post* clickedPost = [self getClickedPost:sender];
         NSMutableArray* comments = clickedPost.comments;
         CommentsViewController* nextCtrl = segue.destinationViewController;
         [nextCtrl setContext:comments];
     }
     else if ([segue.identifier isEqualToString:@"AddCommentSegue"]){
+        Post* clickedPost = [self getClickedPost:sender];
         self.lastClickedPost = clickedPost;
         AddCommentViewController* nextCtrl = segue.destinationViewController;
         nextCtrl.delegate = self;
