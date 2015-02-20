@@ -118,10 +118,10 @@
 //    NSNumber* likesCount = [NSNumber numberWithInt:[currPost.likedUsers count]];
 //    NSString* likesStatusToShow = [NSString stringWithFormat:@"%@ Likes", likesCount];
 //    [cell.likesStatusButton setTitle:likesStatusToShow forState:UIControlStateNormal];
-//    
-//    NSNumber* commentsCount = [NSNumber numberWithInt:[currPost.comments count]];
-//    NSString* commentsStatusToShow = [NSString stringWithFormat:@"%@ Comments", commentsCount];
-//    [cell.commentsButton setTitle:commentsStatusToShow forState:UIControlStateNormal];
+//
+    NSNumber* commentsCount = [NSNumber numberWithInt:[currPost.comments count]];
+    NSString* commentsStatusToShow = [NSString stringWithFormat:@"%@ Comments", commentsCount];
+    [cell.commentsButton setTitle:commentsStatusToShow forState:UIControlStateNormal];
     
     UIImage* img = currPost.image;
     
@@ -143,7 +143,7 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    Post* clickedPost = [self getClickedPost:sender];
+    Post* clickedPost = [self getClickedPost:sender];
     if ([segue.identifier isEqualToString:@"newPost"]) {
         NewPostViewController *newPost = segue.destinationViewController;
         newPost.delegate = self;
@@ -156,16 +156,16 @@
 //        LikesListViewController* nextCtrl = segue.destinationViewController;
 //        [nextCtrl setContext:likes];
 //    }
-//    else if ([segue.identifier isEqualToString:@"CommentsListSegue"]){
-//        NSMutableArray* comments =[[AppModel instance] getCommentsForPost:clickedPost];
-//        CommentsViewController* nextCtrl = segue.destinationViewController;
-//        [nextCtrl setContext:comments];
-//    }
-//    else if ([segue.identifier isEqualToString:@"AddCommentSegue"]){
-//        self.lastClickedPost = clickedPost;
-//        AddCommentViewController* nextCtrl = segue.destinationViewController;
-//        nextCtrl.delegate = self;
-//    }
+    else if ([segue.identifier isEqualToString:@"CommentsListSegue"]){
+        NSMutableArray* comments = clickedPost.comments;
+        CommentsViewController* nextCtrl = segue.destinationViewController;
+        [nextCtrl setContext:comments];
+    }
+    else if ([segue.identifier isEqualToString:@"AddCommentSegue"]){
+        self.lastClickedPost = clickedPost;
+        AddCommentViewController* nextCtrl = segue.destinationViewController;
+        nextCtrl.delegate = self;
+    }
 }
 
 //-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
@@ -179,26 +179,29 @@
 //}
 
 //
-//-(void)newComment:(NSString*)text{
-//    Post* post = self.lastClickedPost;
-//    
-//    Comment* comment = [[Comment alloc] init];
-//    comment.userName = [[AppModel instance] getCurrentUser].nickname;
+-(void)newComment:(NSString*)text{
+    Post* post = self.lastClickedPost;
+    
+    Comment* comment = [[Comment alloc] init];
+    comment.userName = [[AppModel instance] getCurrentUser].nickname;
 //    NSDate* today = [NSDate date];
 //    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
 //    [dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm"];
 //    comment.time = [dateFormatter stringFromDate:today];
-//    comment.content = text;
-//    
-//    [[AppModel instance] addComment:post comment:comment];
-//    
-//    // Update the comments list
-//    post.comments = [[AppModel instance] getCommentsForPost:post];
-//    
-//    // TODO: Try load only the specific row
-//    [self.tableView reloadData];
-//}
-//
+//    comment.time =
+    comment.content = text;
+    
+    [[AppModel instance] addCommentWithBlock:post comment:comment callback:^(BOOL *succeeded) {
+        if (succeeded) {
+            // Update the comments list
+            [[AppModel instance] getCommentsForPostWithBlock:post callback:^(NSMutableArray *comments) {
+                post.comments = comments;
+                [self.tableView reloadData];
+            }];
+        }
+    }];
+}
+
 //- (IBAction)privateMessageButtonClicked:(id)sender{
 //    Post* clickedPost = [self getClickedPost:sender];
 //    [self sendMail:clickedPost.user.email];
