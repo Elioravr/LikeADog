@@ -43,26 +43,27 @@
     }];
     // Fill the list by the DB...
 }
+
+- (IBAction)likeButtonClicked:(id)sender {
+    Post* clickedPost = [self getClickedPost:sender];
+    
+    if ([self isUserLikedPost:clickedPost]) {
+        [[AppModel instance] unlike:clickedPost callback:^(BOOL succeeded) {
+            if (succeeded) {
+                [self loadData];
+            }
+        }];
+    }
+    else {
+        [[AppModel instance] addLikeWithBlock:clickedPost callback:^(BOOL succeeded) {
+            if (succeeded) {
+                [self loadData];
+            }
+        }];
+    }
 //
-//- (IBAction)likeButtonClicked:(id)sender {
-//    Post* clickedPost = [self getClickedPost:sender];
-//    
-//    if ([self isUserLikedPost:clickedPost])
-//        [[AppModel instance] unlike:clickedPost];
-//    else
-//        [[AppModel instance] addLikeWithBlock:clickedPost callback:^(BOOL succeeded) {
-//            if (succeeded) {
-//                [self loadData];
-////                // Update the likes list
-////                [[AppModel instance] getAllPostsWithBlock:^(NSMutableArray *likedUsers) {
-////                    clickedPost.likedUsers = likedUsers;
-////                    [self.tableView reloadData];
-////                }
-//            }
-//        }];
-//    
 //    // [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:indexPath.row inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
-//}
+}
 
 -(Post*)getClickedPost:(id)senderButton {
     CGPoint buttonPosition = [senderButton convertPoint:CGPointZero toView:self.tableView];
@@ -88,20 +89,20 @@
     return self.data.count;
 }
 
-//-(BOOL)isUserLikedPost:(Post*)post {
-//    BOOL isCurrUserliked = NO;
-//    User* currUser = [[AppModel instance] getCurrentUser];
-//    for (User* iUser in post.likedUsers)
-//    {
-//        if (iUser.email == currUser.email)
-//        {
-//            isCurrUserliked = YES;``
-//            break;
-//        }
-//    }
-//    
-//    return isCurrUserliked;
-//}
+-(BOOL)isUserLikedPost:(Post*)post {
+    BOOL isCurrUserliked = NO;
+    User* currUser = [[AppModel instance] getCurrentUser];
+    for (User* iUser in post.likedUsers)
+    {
+        if ([iUser.userId isEqualToString:currUser.userId])
+        {
+            isCurrUserliked = YES;
+            break;
+        }
+    }
+    
+    return isCurrUserliked;
+}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -112,12 +113,12 @@
     cell.userNameLabel.text = currPost.user.nickname;
     cell.postText.text = currPost.text;
     
-//    NSString* likeButtonContent = [self isUserLikedPost:currPost] ? @"Unlike": @"Like";
-//    [cell.likeButton setTitle:likeButtonContent forState:UIControlStateNormal];
+    NSString* likeButtonContent = [self isUserLikedPost:currPost] ? @"Unlike": @"Like";
+    [cell.likeButton setTitle:likeButtonContent forState:UIControlStateNormal];
     
-//    NSNumber* likesCount = [NSNumber numberWithInt:[currPost.likedUsers count]];
-//    NSString* likesStatusToShow = [NSString stringWithFormat:@"%@ Likes", likesCount];
-//    [cell.likesStatusButton setTitle:likesStatusToShow forState:UIControlStateNormal];
+    NSNumber* likesCount = [NSNumber numberWithInt:[currPost.likedUsers count]];
+    NSString* likesStatusToShow = [NSString stringWithFormat:@"%@ Likes", likesCount];
+    [cell.likesStatusButton setTitle:likesStatusToShow forState:UIControlStateNormal];
 //
     NSNumber* commentsCount = [NSNumber numberWithInt:[currPost.comments count]];
     NSString* commentsStatusToShow = [NSString stringWithFormat:@"%@ Comments", commentsCount];
@@ -147,14 +148,11 @@
         NewPostViewController *newPost = segue.destinationViewController;
         newPost.delegate = self;
     }
-//    if ([segue.identifier isEqualToString:@"LikesListSegue"]){
-//        NSMutableArray* likes;
-//        [[AppModel instance] getLikedUsersForPostWithBlock:clickedPost callback:^(NSMutableArray *likedUsers) {
-//            __block likes = likedUsers;
-//        }];
-//        LikesListViewController* nextCtrl = segue.destinationViewController;
-//        [nextCtrl setContext:likes];
-//    }
+    else if ([segue.identifier isEqualToString:@"LikesListSegue"]){
+        Post* clickedPost = [self getClickedPost:sender];
+        LikesListViewController* nextCtrl = segue.destinationViewController;
+        [nextCtrl setContext:clickedPost.likedUsers];
+    }
     else if ([segue.identifier isEqualToString:@"CommentsListSegue"]){
         Post* clickedPost = [self getClickedPost:sender];
         NSMutableArray* comments = clickedPost.comments;

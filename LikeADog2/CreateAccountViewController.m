@@ -69,7 +69,7 @@
         [self showConfirmationAlert];
     }
     else {
-        user = [[User alloc] initWithNickname:nickname email:email password:password passwordConfirmation:passwordConfirmation birthday:birthday gender:gender];
+        user = [[User alloc] initWithNickname:nickname email:email password:password passwordConfirmation:passwordConfirmation birthday:birthday gender:gender userId:@""];
     }
     
     return user;
