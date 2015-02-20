@@ -16,7 +16,23 @@
 		532317DD1A66A67B00E31946 /* LikeADog2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 532317DC1A66A67B00E31946 /* LikeADog2Tests.m */; };
 		532317E71A66A8EE00E31946 /* sticker375x360.png in Resources */ = {isa = PBXBuildFile; fileRef = 532317E61A66A8EE00E31946 /* sticker375x360.png */; };
 		532317EA1A66AC3F00E31946 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532317E91A66AC3F00E31946 /* CreateAccountViewController.m */; };
-		532317ED1A66AD3C00E31946 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 532317EC1A66AD3C00E31946 /* User.m */; };
+		533560DE1A96623F005FC165 /* hamsters.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 533560DB1A96623F005FC165 /* hamsters.jpeg */; };
+		533560DF1A96623F005FC165 /* dogs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 533560DC1A96623F005FC165 /* dogs.jpg */; };
+		533560E11A966296005FC165 /* Mixed_Pets.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 533560E01A966296005FC165 /* Mixed_Pets.jpg */; };
+		5387F45E1A9624040084A63C /* NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F45D1A9624040084A63C /* NewPostViewController.m */; };
+		5387F4611A962FCC0084A63C /* EliorPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4601A962FCC0084A63C /* EliorPost.m */; };
+		5387F4641A96447E0084A63C /* PostViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4631A96447E0084A63C /* PostViewCell.m */; };
+		5387F4671A96452C0084A63C /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4661A96452C0084A63C /* NewsFeedViewController.m */; };
+		5387F46F1A964BD00084A63C /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F46A1A964BD00084A63C /* Comment.m */; };
+		5387F4701A964BD00084A63C /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F46C1A964BD00084A63C /* Post.m */; };
+		5387F4711A964BD00084A63C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F46E1A964BD00084A63C /* User.m */; };
+		5387F4771A964C190084A63C /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4741A964C190084A63C /* AppModel.m */; };
+		5387F4781A964C190084A63C /* ParseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4761A964C190084A63C /* ParseModel.m */; };
+		5387F47D1A964F670084A63C /* LikesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F47A1A964F670084A63C /* LikesListViewController.m */; };
+		5387F47E1A964F670084A63C /* LikeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F47C1A964F670084A63C /* LikeViewCell.m */; };
+		5387F4831A9650C10084A63C /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4801A9650C10084A63C /* CommentsViewController.m */; };
+		5387F4841A9650C10084A63C /* CommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4821A9650C10084A63C /* CommentViewCell.m */; };
+		5387F4871A9652920084A63C /* AddCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5387F4861A9652920084A63C /* AddCommentViewController.m */; };
 		53A29ED81A863A6900E21386 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A29ED61A863A6900E21386 /* Bolts.framework */; };
 		53A29ED91A863A6900E21386 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A29ED71A863A6900E21386 /* Parse.framework */; };
 		53A29EDB1A863AF800E21386 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A29EDA1A863AF800E21386 /* Accounts.framework */; };
@@ -32,7 +48,7 @@
 		53A29EEF1A863B7C00E21386 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A29EEE1A863B7C00E21386 /* SystemConfiguration.framework */; };
 		53A29EF11A863B8800E21386 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A29EF01A863B8800E21386 /* libz.dylib */; };
 		53A29EF31A863B9300E21386 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A29EF21A863B9300E21386 /* libsqlite3.dylib */; };
-		53A5E6C01A8FE99F00B20DF6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5E6BF1A8FE99F00B20DF6 /* MainViewController.m */; };
+		53D03BCE1A93BCE40011C220 /* unicorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53D03BCD1A93BCE40011C220 /* unicorn.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +78,37 @@
 		532317E61A66A8EE00E31946 /* sticker375x360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sticker375x360.png; sourceTree = "<group>"; };
 		532317E81A66AC3F00E31946 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
 		532317E91A66AC3F00E31946 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
-		532317EB1A66AD3C00E31946 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		532317EC1A66AD3C00E31946 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		533560DB1A96623F005FC165 /* hamsters.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hamsters.jpeg; path = ../../../../Downloads/hamsters.jpeg; sourceTree = "<group>"; };
+		533560DC1A96623F005FC165 /* dogs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dogs.jpg; path = ../../../../Downloads/dogs.jpg; sourceTree = "<group>"; };
+		533560E01A966296005FC165 /* Mixed_Pets.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mixed_Pets.jpg; path = ../../../../Downloads/Mixed_Pets.jpg; sourceTree = "<group>"; };
+		5387F45C1A9624040084A63C /* NewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPostViewController.h; sourceTree = "<group>"; };
+		5387F45D1A9624040084A63C /* NewPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPostViewController.m; sourceTree = "<group>"; };
+		5387F45F1A962FCC0084A63C /* EliorPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EliorPost.h; sourceTree = "<group>"; };
+		5387F4601A962FCC0084A63C /* EliorPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EliorPost.m; sourceTree = "<group>"; };
+		5387F4621A96447E0084A63C /* PostViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostViewCell.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/PostViewCell.h"; sourceTree = "<group>"; };
+		5387F4631A96447E0084A63C /* PostViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostViewCell.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/PostViewCell.m"; sourceTree = "<group>"; };
+		5387F4651A96452C0084A63C /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
+		5387F4661A96452C0084A63C /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
+		5387F4691A964BD00084A63C /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/Comment.h"; sourceTree = "<group>"; };
+		5387F46A1A964BD00084A63C /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/Comment.m"; sourceTree = "<group>"; };
+		5387F46B1A964BD00084A63C /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/Post.h"; sourceTree = "<group>"; };
+		5387F46C1A964BD00084A63C /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/Post.m"; sourceTree = "<group>"; };
+		5387F46D1A964BD00084A63C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/User.h"; sourceTree = "<group>"; };
+		5387F46E1A964BD00084A63C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/User.m"; sourceTree = "<group>"; };
+		5387F4731A964C190084A63C /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppModel.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/AppModel.h"; sourceTree = "<group>"; };
+		5387F4741A964C190084A63C /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppModel.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/AppModel.m"; sourceTree = "<group>"; };
+		5387F4751A964C190084A63C /* ParseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseModel.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/ParseModel.h"; sourceTree = "<group>"; };
+		5387F4761A964C190084A63C /* ParseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseModel.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/ParseModel.m"; sourceTree = "<group>"; };
+		5387F4791A964F670084A63C /* LikesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LikesListViewController.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/LikesListViewController.h"; sourceTree = "<group>"; };
+		5387F47A1A964F670084A63C /* LikesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LikesListViewController.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/LikesListViewController.m"; sourceTree = "<group>"; };
+		5387F47B1A964F670084A63C /* LikeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LikeViewCell.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/LikeViewCell.h"; sourceTree = "<group>"; };
+		5387F47C1A964F670084A63C /* LikeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LikeViewCell.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/LikeViewCell.m"; sourceTree = "<group>"; };
+		5387F47F1A9650C10084A63C /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentsViewController.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/CommentsViewController.h"; sourceTree = "<group>"; };
+		5387F4801A9650C10084A63C /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentsViewController.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/CommentsViewController.m"; sourceTree = "<group>"; };
+		5387F4811A9650C10084A63C /* CommentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentViewCell.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/CommentViewCell.h"; sourceTree = "<group>"; };
+		5387F4821A9650C10084A63C /* CommentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentViewCell.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/CommentViewCell.m"; sourceTree = "<group>"; };
+		5387F4851A9652920084A63C /* AddCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCommentViewController.h; path = "../../../../Downloads/MyApp5 gal/MyApp5/AddCommentViewController.h"; sourceTree = "<group>"; };
+		5387F4861A9652920084A63C /* AddCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCommentViewController.m; path = "../../../../Downloads/MyApp5 gal/MyApp5/AddCommentViewController.m"; sourceTree = "<group>"; };
 		53A29ED61A863A6900E21386 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		53A29ED71A863A6900E21386 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		53A29EDA1A863AF800E21386 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -79,8 +124,7 @@
 		53A29EEE1A863B7C00E21386 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		53A29EF01A863B8800E21386 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		53A29EF21A863B9300E21386 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		53A5E6BE1A8FE99F00B20DF6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
-		53A5E6BF1A8FE99F00B20DF6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		53D03BCD1A93BCE40011C220 /* unicorn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = unicorn.jpg; path = ../../../../Downloads/unicorn.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +196,24 @@
 		532317BF1A66A67B00E31946 /* LikeADog2 */ = {
 			isa = PBXGroup;
 			children = (
-				53A5E6BE1A8FE99F00B20DF6 /* MainViewController.h */,
-				53A5E6BF1A8FE99F00B20DF6 /* MainViewController.m */,
+				533560E01A966296005FC165 /* Mixed_Pets.jpg */,
+				533560DB1A96623F005FC165 /* hamsters.jpeg */,
+				533560DC1A96623F005FC165 /* dogs.jpg */,
+				5387F47F1A9650C10084A63C /* CommentsViewController.h */,
+				5387F4801A9650C10084A63C /* CommentsViewController.m */,
+				5387F4811A9650C10084A63C /* CommentViewCell.h */,
+				5387F4821A9650C10084A63C /* CommentViewCell.m */,
+				5387F4791A964F670084A63C /* LikesListViewController.h */,
+				5387F47A1A964F670084A63C /* LikesListViewController.m */,
+				5387F47B1A964F670084A63C /* LikeViewCell.h */,
+				5387F47C1A964F670084A63C /* LikeViewCell.m */,
+				5387F4851A9652920084A63C /* AddCommentViewController.h */,
+				5387F4861A9652920084A63C /* AddCommentViewController.m */,
+				5387F4721A964BDF0084A63C /* DAL */,
+				5387F4681A964BA70084A63C /* Entities */,
+				5387F4621A96447E0084A63C /* PostViewCell.h */,
+				5387F4631A96447E0084A63C /* PostViewCell.m */,
+				53D03BCD1A93BCE40011C220 /* unicorn.jpg */,
 				532317E61A66A8EE00E31946 /* sticker375x360.png */,
 				532317C41A66A67B00E31946 /* AppDelegate.h */,
 				532317C51A66A67B00E31946 /* AppDelegate.m */,
@@ -165,8 +225,12 @@
 				532317C01A66A67B00E31946 /* Supporting Files */,
 				532317E81A66AC3F00E31946 /* CreateAccountViewController.h */,
 				532317E91A66AC3F00E31946 /* CreateAccountViewController.m */,
-				532317EB1A66AD3C00E31946 /* User.h */,
-				532317EC1A66AD3C00E31946 /* User.m */,
+				5387F45C1A9624040084A63C /* NewPostViewController.h */,
+				5387F45D1A9624040084A63C /* NewPostViewController.m */,
+				5387F45F1A962FCC0084A63C /* EliorPost.h */,
+				5387F4601A962FCC0084A63C /* EliorPost.m */,
+				5387F4651A96452C0084A63C /* NewsFeedViewController.h */,
+				5387F4661A96452C0084A63C /* NewsFeedViewController.m */,
 			);
 			path = LikeADog2;
 			sourceTree = "<group>";
@@ -195,6 +259,30 @@
 				532317DB1A66A67B00E31946 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5387F4681A964BA70084A63C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5387F4691A964BD00084A63C /* Comment.h */,
+				5387F46A1A964BD00084A63C /* Comment.m */,
+				5387F46B1A964BD00084A63C /* Post.h */,
+				5387F46C1A964BD00084A63C /* Post.m */,
+				5387F46D1A964BD00084A63C /* User.h */,
+				5387F46E1A964BD00084A63C /* User.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		5387F4721A964BDF0084A63C /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				5387F4731A964C190084A63C /* AppModel.h */,
+				5387F4741A964C190084A63C /* AppModel.m */,
+				5387F4751A964C190084A63C /* ParseModel.h */,
+				5387F4761A964C190084A63C /* ParseModel.m */,
+			);
+			name = DAL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +368,11 @@
 			files = (
 				532317CC1A66A67B00E31946 /* Main.storyboard in Resources */,
 				532317D11A66A67B00E31946 /* LaunchScreen.xib in Resources */,
+				533560E11A966296005FC165 /* Mixed_Pets.jpg in Resources */,
 				532317E71A66A8EE00E31946 /* sticker375x360.png in Resources */,
+				533560DF1A96623F005FC165 /* dogs.jpg in Resources */,
+				533560DE1A96623F005FC165 /* hamsters.jpeg in Resources */,
+				53D03BCE1A93BCE40011C220 /* unicorn.jpg in Resources */,
 				532317CE1A66A67B00E31946 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,12 +391,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532317ED1A66AD3C00E31946 /* User.m in Sources */,
-				53A5E6C01A8FE99F00B20DF6 /* MainViewController.m in Sources */,
+				5387F4711A964BD00084A63C /* User.m in Sources */,
+				5387F45E1A9624040084A63C /* NewPostViewController.m in Sources */,
+				5387F46F1A964BD00084A63C /* Comment.m in Sources */,
+				5387F4671A96452C0084A63C /* NewsFeedViewController.m in Sources */,
+				5387F4641A96447E0084A63C /* PostViewCell.m in Sources */,
+				5387F4841A9650C10084A63C /* CommentViewCell.m in Sources */,
 				532317EA1A66AC3F00E31946 /* CreateAccountViewController.m in Sources */,
+				5387F4701A964BD00084A63C /* Post.m in Sources */,
+				5387F4771A964C190084A63C /* AppModel.m in Sources */,
+				5387F47E1A964F670084A63C /* LikeViewCell.m in Sources */,
+				5387F4781A964C190084A63C /* ParseModel.m in Sources */,
 				532317C91A66A67B00E31946 /* LoginViewController.m in Sources */,
 				532317C61A66A67B00E31946 /* AppDelegate.m in Sources */,
 				532317C31A66A67B00E31946 /* main.m in Sources */,
+				5387F47D1A964F670084A63C /* LikesListViewController.m in Sources */,
+				5387F4831A9650C10084A63C /* CommentsViewController.m in Sources */,
+				5387F4611A962FCC0084A63C /* EliorPost.m in Sources */,
+				5387F4871A9652920084A63C /* AddCommentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
